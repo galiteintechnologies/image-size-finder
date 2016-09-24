@@ -1,2 +1,2 @@
-# image-size-detail
-Check if images are valid by Mininum Maximum size with image detail array
+# Image Size Detail
+Extension to get array of images with size detail and valid image by size given in configuration.
