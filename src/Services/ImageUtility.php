@@ -10,7 +10,7 @@ class ImageUtility {
      * 
      * @return string
      */
-    private static function getSize($image)
+    public static function getSize($image)
     {   
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $image);
