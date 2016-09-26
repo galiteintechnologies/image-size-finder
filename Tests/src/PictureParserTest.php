@@ -13,14 +13,14 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
     {
         $pictureParser = new PictureParser();
         
-        $images = ['http://www.google.co.in/images/srpr/logo4w.png'];
+        $images = ['https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png'];
         $actualResult = $pictureParser->fetchSize($images);
         
-        $expectedResult = [
-            "url"=> "http://www.google.co.in/images/srpr/logo4w.png",
-            "size"=> 18946,
-            "height"=> 190,
-            "width"=> 550,
+        $expectedResult = arrray(0) = [
+            "url"=> "https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png",
+            "size"=> 82966,
+            "height"=> 512,
+            "width"=> 512,
             "valid"=> true 
         ];
                 

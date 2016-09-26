@@ -11,9 +11,9 @@ class ImageUtilityTest extends \PHPUnit_Framework_TestCase
      */
     public function getSizeTest() 
     {
-        $actualResult = ImageUtility::getSize("http://www.google.co.in/images/srpr/logo4w.png");
+        $actualResult = ImageUtility::getSize("https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png");
                 
-        $this->assertEquals(18946, $actualResult);
+        $this->assertEquals(82966, $actualResult);
     }
 
 }
