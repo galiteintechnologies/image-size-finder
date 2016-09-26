@@ -16,7 +16,7 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
         $images = ['https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png'];
         $actualResult = $pictureParser->fetchSize($images);
         
-        $expectedResult = arrray(0) = [
+        $expectedResult = [
             "url"=> "https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png",
             "size"=> 82966,
             "height"=> 512,
@@ -24,6 +24,6 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
             "valid"=> true 
         ];
                 
-        $this->assertEquals($expectedResult, $actualResult);
+        $this->assertEquals($expectedResult[0], $actualResult);
     }
 }
