@@ -16,6 +16,16 @@ composer require nexuslinkservices/image-size-finder
 
 ## Usage
 
+Set minimum and maximum value in bytes in configuration file. like this
+
+```
+image_size:
+    minimum: 100
+    maximum: 900
+```
+
+If you do not create configuration file it will from package.
+
 ```
 <?php
 
