@@ -32,7 +32,7 @@ var_dump($imageDetails[0]);
 ## Output
 
 ```
-$imageDetails = [
+array = [
         "url"=> "https://raw.githubusercontent.com/nexuslinkservices/image-size-finder/master/web/samples/sample_image.png",
         "size"=> 82966,
         "height"=> 512,

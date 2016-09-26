@@ -24,6 +24,6 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
             "valid"=> true 
         ];
                 
-        $this->assertEquals($expectedResult[0], $actualResult);
+        $this->assertEquals($expectedResult, $actualResult[0]);
     }
 }
