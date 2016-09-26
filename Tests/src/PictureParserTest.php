@@ -16,12 +16,12 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
         $images = ['http://www.google.co.in/images/srpr/logo4w.png'];
         $actualResult = $pictureParser->getImageSize($images);
         
-        $expectedResult = [ 
-            ["url"]=> "http://www.google.co.in/images/srpr/logo4w.png",
-            ["size"]=> 18946,
-            ["height"]=> 190,
-            ["width"]=> 550,
-            ["valid"]=> true 
+        $expectedResult = [
+            "url"=> "http://www.google.co.in/images/srpr/logo4w.png",
+            "size"=> 18946,
+            "height"=> 190,
+            "width"=> 550,
+            "valid"=> true 
         ];
                 
         $this->assertEquals($expectedResult, $actualResult);
