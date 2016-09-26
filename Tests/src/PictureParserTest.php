@@ -14,7 +14,7 @@ class PictureParserTest extends \PHPUnit_Framework_TestCase {
         $pictureParser = new PictureParser();
         
         $images = ['http://www.google.co.in/images/srpr/logo4w.png'];
-        $actualResult = $pictureParser->getImageSize($images);
+        $actualResult = $pictureParser->fetchSize($images);
         
         $expectedResult = [
             "url"=> "http://www.google.co.in/images/srpr/logo4w.png",
