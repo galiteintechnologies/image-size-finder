@@ -34,7 +34,7 @@ class PictureParser {
      */
     public function fetchSize($images) {
         
-        if(empty($images))
+        if (empty($images))
         {
             return [];
         }
@@ -45,7 +45,7 @@ class PictureParser {
         
         $imageList = array();
         
-        foreach($images as $key => $image) {
+        foreach ($images as $key => $image) {
             $imageList[$key]['url'] = $image;
             $imageList[$key]['size'] = ImageUtility::getSize($image);
             
@@ -55,7 +55,7 @@ class PictureParser {
             
             $imageList[$key]['valid'] = true;
             
-            if($imageList[$key]['size'] < $minSize || $imageList[$key]['size'] > $maxSize)
+            if ($imageList[$key]['size'] < $minSize || $imageList[$key]['size'] > $maxSize)
             {
                 $imageList[$key]['valid'] = false;
             }
