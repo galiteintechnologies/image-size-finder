@@ -11,7 +11,7 @@ Extension to get image details with size, height,width and valid flag value by m
 If you use composer, you can add this package by running 
 
 ````
-composer require nexuslinkservices/image-size-finder
+composer require galiteintechnologies/image-size-finder
 ````
 
 ## Usage
